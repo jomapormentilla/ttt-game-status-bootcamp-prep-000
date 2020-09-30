@@ -51,7 +51,7 @@ def over?(board)
 end
 
 def winner(board)
-  if(draw?(board) == true)
+  if(draw?(board) == over?(board))
     nil
   else
     won?(board).each do |index|
